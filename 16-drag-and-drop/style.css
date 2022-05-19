@@ -1,0 +1,40 @@
+.section {
+    background-color: rgb(47, 18, 73);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.parrafo {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.parrafo.dragging {
+    opacity: 0.3;
+}
+
+.imagen-fantasma{
+    width: 70px;
+    height: 100px;
+    border-radius: 10px; 
+    background-color: rgba(105, 105, 105, 0.76);
+    position: absolute;
+    left: -100vw;
+    overflow: hidden;
+}
+
+.imagen-fantasma::before {
+    content: "parrafo";
+    position: relative;
+    left: 10px;
+    top: 10px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.imagen {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
